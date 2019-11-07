@@ -3,24 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>大杯可樂牛奶</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    //<link rel="stylesheet" type="text/css" href="style.css">
   </head>
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
   <script>
-	function displayDate(){
-		document.getElementById("demo").innerHTML=https://spreadsheets.google.com/feeds/cells/1s0mCs79Rask9VLLUP9_xLMUi_QMM0pw56daoASvqeG0/1/public/values?alt=json;
-	}
+  	function displayDate(){
+      var parameter = {
+        url: 'https://docs.google.com/spreadsheets/d/1s0mCs79Rask9VLLUP9_xLMUi_QMM0pw56daoASvqeG0/edit#gid=0',
+        name: 'DBIC',
+        startRow: 2,
+        startColumn: 3
+      };
+      $.get('https://script.google.com/macros/s/AKfycbzN13CSaqsqOgD5DEeVfPOTLmRUeV8t7WJpi7ZvaVIpHVGrIs4/exec', parameter, function(data) {
+        console.log(data);
+        document.getElementById("demo").innerHTML=data;
+      });
+  	}
   </script>
   <body>
     <a href="https://www.cutercounter.com/traditional-chinese-n/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=gvcffdk&nd=6&style=1" border="0" alt="網站計數器"></a>
     <h1>真的厲害</h1>
     <p>
     	<a href="https://imgur.com/hz1Hltb"><img src="https://i.imgur.com/hz1Hltb.gif" title="source: imgur.com" /></a>
-    	</br>
-    	</br>
-    	</br>
-    	</br>
-    	</br>
-    	</br>
     	</br>
 	    <a href="https://www.facebook.com/BigMilkCoke" target="_brank">FB專頁</a>
 		</br>
