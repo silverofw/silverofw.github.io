@@ -12,11 +12,14 @@
         url: 'https://docs.google.com/spreadsheets/d/1s0mCs79Rask9VLLUP9_xLMUi_QMM0pw56daoASvqeG0/edit#gid=0',
         name: 'DBIC',
         startRow: 2,
-        startColumn: 3
+        startColumn: 3,
+        endRow: 2,
+        endColumn: 2
       };
       $.get('https://script.google.com/macros/s/AKfycbzN13CSaqsqOgD5DEeVfPOTLmRUeV8t7WJpi7ZvaVIpHVGrIs4/exec', parameter, function(data) {
         console.log(data);
-        document.getElementById("demo").innerHTML=data;
+        var splits = data.split(",");
+        document.getElementById("demo").innerHTML=splits[0];
       });
   	}
   </script>
