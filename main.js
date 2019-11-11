@@ -1,3 +1,16 @@
+$(function(){
+  $('#BackTop').click(function(){ 
+    $('html,body').animate({scrollTop:0}, 333);
+  });
+  $(window).scroll(function() {
+    if ( $(this).scrollTop() > 300 ){
+      $('#BackTop').fadeIn(222);
+    } else {
+      $('#BackTop').stop().fadeOut(222);
+    }
+  }).scroll();
+});
+
 function ShowData(list){
   var parameter = {
     url: 'https://docs.google.com/spreadsheets/d/1s0mCs79Rask9VLLUP9_xLMUi_QMM0pw56daoASvqeG0/edit#gid=0',
@@ -43,10 +56,10 @@ function ShowData(list){
         "<div id = \"card_bg\">" + 
           "<div id =" + cardBgCss + ">" + 
             jo.data[i].id + "&nbsp" +
-          " </div>" + 
-          "<div id=" + cardBgCss1 +">" + 
             " [ " + jo.data[i].name_cn + " ]&nbsp" + 
-            jo.data[i].card_type + "</br>" +    
+            jo.data[i].card_type + "</br>" + 
+          " </div>" + 
+          "<div id=" + cardBgCss1 +">" +    
             "<div id="+cardBgCss2+">" +
               jo.data[i].card_text_cn + "</br>" + 
             "</div>" + 
@@ -54,11 +67,6 @@ function ShowData(list){
         "</div>";
     }
   });
-}
-
-function ScrollTop()
-{
-  $('html,body').animate({scrollTop:0}, 333);
 }
 
 function OnOver(x)
