@@ -1,0 +1,105 @@
+body {
+	margin-top: 100px;
+}
+/*
+p{
+	text-align: center;
+}
+*/
+
+#top_banner{
+	height: 100px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	position: fixed;
+	background-color: white;
+	border-bottom: 2px solid #92a8d1;
+}
+
+#cardcard_icon{
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+#cardcard_bar{
+	float: right;
+}
+#cardcard_btn{
+	float: right;
+	border-right: 10px solid #FFF;
+	border-left: 10px solid #FFF;
+}
+
+#effect_card_bg{	
+	font-size: 15px;	
+	border: 2px solid #FFF;
+	background-color: #dea44b;
+}
+#effect_card_bg1{
+	border: 2px solid #FFF;
+	background-color: #eddab2;
+}
+#effect_card_bg2{
+	font-size: 14px;
+	line-height: 1.8;
+}
+#spell_card_bg{
+	font-size: 15px;
+	border: 2px solid #FFF;
+	background-color: #a8edba;
+}
+#spell_card_bg1{
+	border: 2px solid #FFF;
+	background-color: #d5f5dd;
+}
+#trap_card_bg{
+	font-size: 15px;
+	border: 2px solid #FFF;
+	background-color: #e041d3;
+}
+#trap_card_bg1{
+	border: 2px solid #FFF;
+	background-color: #e8c1e5;
+}
+
+/* 56px */
+.toTop-arrow {
+	width: 3.5rem;
+	height: 3.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 31px;
+	height: 7px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.4rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.4rem;
+}
+.toTop-arrow:focus {outline: none;}
