@@ -5,11 +5,17 @@ body {
 p{
 	text-align: center;
 }
+@media (min-width:600px) {
+  
+}
+@media (max-width:599px) {
+
+}
 
 .content
 {
-	margin-left: 200px;
-	margin-right: 200px;
+	max-width: 720px;
+	margin:0px auto;/*通用置中方法*/
 }
 
 .item
@@ -39,9 +45,9 @@ p{
 }
 
 .right{
-	float: right;
-	position: relative;
-	top: 200px;
+	position: fixed;
+	top: 50px;
+	left: calc(50% + 360px);
 	width: 200px;
 	height: 600px;
 	box-shadow: 
@@ -52,9 +58,11 @@ p{
 }
 .left{
 	position: fixed;
+	top: 50px;
+	right: calc(50% + 360px);
 	width: 180px;
 	max-height: 600px;
-	height: calc(70% - 0px);
+	height: 400px;
 	margin: 10px;
 	box-shadow: 
 		0 2px 2px 0 rgb(0 0 0 / 12%), 
