@@ -13,26 +13,61 @@
 
       gtag('config', 'AW-940609096');
     </script>
+    <!--  -->
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript">
+        jQuery(function(){
+            jQuery('#loadPage').click(function(){
+                jQuery('#pagecontainer').load('resume.html', 
+                        function(){alert('Content Successfully Loaded.')} 
+                );
+            });
+        })
+    </script>       
   </head>
   <body>
-    <div id="top_banner">
-      <div id="cardcard_icon">
-      	<img src="https://i.imgur.com/hz1Hltb.gif" title="source: imgur.com" class="center">
-      </div>
-      <div>
-        <h1>超絕卡多</h1>
-      </div>
-      <div id="cardcard_bar">
-        <div id="cardcard_btn" onmouseover="OnOver(this)" onmouseout="OnOut(this)" 
-          onclick="OpenUrl('https://www.facebook.com/cardocardooo/')">卡多卡多FB </div>
-        <div id="cardcard_btn" onmouseover="OnOver(this)" onmouseout="OnOut(this)" 
-          onclick="OpenUrl('https://www.facebook.com/BigMilkCoke')">大杯可樂牛奶的工作室FB </div>
-        <div id="cardcard_btn" onmouseover="OnOver(this)" onmouseout="OnOut(this)" 
-          onclick="OpenUrl('https://www.pixiv.net/member.php?id=955320')">pixiv </div>
-        <div id="cardcard_btn" onmouseover="OnOver(this)" onmouseout="OnOut(this)" 
-          onclick="OpenUrl('https://www.youtube.com/@cardooo')">超絕卡多YT </div>
+    <!--  -->
+    <div class="left">
+      <img class="icon" src="https://i.imgur.com/hz1Hltb.gif" title="source: imgur.com">
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>求知若渴．虛懷若愚</p>
+      <p><a href="https://silverofw.github.io/">首頁</a></p>
+      <p><a href="https://silverofw.github.io/">分類</a></p>
+      <p><a href="https://silverofw.github.io/">關於我</a></p>
+      <p>&nbsp;</p>
+    </div>
+    <!--  -->
+    <div class="right">
+      <p>超絕卡多</p>
+        <p><a href="https://github.com/silverofw" target="_blank">GitHub</a></p>
+        <p><a href="https://www.youtube.com/@cardooo" target="_blank">YouTube</a></p>
+        <p><a href="https://www.pixiv.net/member.php?id=955320" target="_blank">pixiv</a></p>    
+      <p style="text-align:center">
         <a href="https://www.cutercounter.com/traditional-chinese-n/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=gvcffdk&nd=6&style=1" border="0" alt="網站計數器"></a>
+      </p>
+    </div>
+    <!--  -->
+    <div class="content">
+      <div class="item-title">
+        <img class="img" src="https://i.imgur.com/4RahfdO.jpg" title="source: imgur.com">
       </div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item">
+        <a href="javascript:void(0)" id="loadPage">Click To Load Web Page</a><br/>
+        <div id="pagecontainer"></div>
+      </div>
+      <div class="item-footer">
+        <button class="button">1</button>
+        <button class="button">2</button>
+        <button class="button">3</button>
+        <button class="button">4</button>
+        <button class="button">></button>
+      </div>    
     </div>
   </body>
 </html>

@@ -1,105 +1,89 @@
 body {
-	margin-top: 100px;
+	margin-top: 0px;
 }
-/*
+
 p{
 	text-align: center;
 }
-*/
 
-#top_banner{
-	height: 100px;
-	top: 0;
-	left: 0;
-	width: 100%;
-	position: fixed;
-	background-color: white;
-	border-bottom: 2px solid #92a8d1;
+.content
+{
+	margin-left: 200px;
+	margin-right: 200px;
 }
 
-#cardcard_icon{
-	float: left;
+.item
+{
+	width: calc(100% - 20px);
+	height: 400px;	
+	margin: 10px;
+	box-shadow: 
+		0 2px 2px 0 rgb(0 0 0 / 12%), 
+		0 3px 1px -2px rgb(0 0 0 / 6%), 
+		0 1px 5px 0 rgb(0 0 0 / 12%), 
+		0 -1px 0.5px 0 rgb(0 0 0 / 9%);
+}
+
+.item-title
+{
+	width: calc(100% - 20px);
+	height: 20%;
+	margin: 10px;
+}
+
+.item-footer
+{
+	width: calc(100% - 20px);
+	height: 100px;	
+	margin: 10px;
+}
+
+.right{
+	float: right;
+	position: relative;
+	top: 200px;
+	width: 200px;
+	height: 600px;
+	box-shadow: 
+		0 2px 2px 0 rgb(0 0 0 / 12%), 
+		0 3px 1px -2px rgb(0 0 0 / 6%), 
+		0 1px 5px 0 rgb(0 0 0 / 12%), 
+		0 -1px 0.5px 0 rgb(0 0 0 / 9%);
+}
+.left{
+	position: fixed;
+	width: 180px;
+	max-height: 600px;
+	height: calc(70% - 0px);
+	margin: 10px;
+	box-shadow: 
+		0 2px 2px 0 rgb(0 0 0 / 12%), 
+		0 3px 1px -2px rgb(0 0 0 / 6%), 
+		0 1px 5px 0 rgb(0 0 0 / 12%), 
+		0 -1px 0.5px 0 rgb(0 0 0 / 9%);
+}
+
+.icon {
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	margin: -50px 0 0 -50px;
 	width: 100px;
 	height: 100px;
 }
-.center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 90%;
+.img
+{
+	width: 100%;
 }
-
-#cardcard_bar{
-	float: right;
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
-#cardcard_btn{
-	float: right;
-	border-right: 10px solid #FFF;
-	border-left: 10px solid #FFF;
-}
-
-#effect_card_bg{	
-	font-size: 15px;	
-	border: 2px solid #FFF;
-	background-color: #dea44b;
-}
-#effect_card_bg1{
-	border: 2px solid #FFF;
-	background-color: #eddab2;
-}
-#effect_card_bg2{
-	font-size: 14px;
-	line-height: 1.8;
-}
-#spell_card_bg{
-	font-size: 15px;
-	border: 2px solid #FFF;
-	background-color: #a8edba;
-}
-#spell_card_bg1{
-	border: 2px solid #FFF;
-	background-color: #d5f5dd;
-}
-#trap_card_bg{
-	font-size: 15px;
-	border: 2px solid #FFF;
-	background-color: #e041d3;
-}
-#trap_card_bg1{
-	border: 2px solid #FFF;
-	background-color: #e8c1e5;
-}
-
-/* 56px */
-.toTop-arrow {
-	width: 3.5rem;
-	height: 3.5rem;
-	padding: 0;
-	margin: 0;
-	border: 0;
-	border-radius: 33%;
-	opacity: 0.6;
-	background: #000;
-	cursor: pointer;
-	position:fixed;
-	right: 1rem;
-	bottom: 1rem;
-	display: none;
-}
-.toTop-arrow::before, .toTop-arrow::after {
-	width: 31px;
-	height: 7px;
-	border-radius: 3px;
-	background: #f90;
-	position: absolute;
-	content: "";
-}
-.toTop-arrow::before {
-	transform: rotate(-45deg) translate(0, -50%);
-	left: 0.4rem;
-}
-.toTop-arrow::after {
-	transform: rotate(45deg) translate(0, -50%);
-	right: 0.4rem;
-}
-.toTop-arrow:focus {outline: none;}
