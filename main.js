@@ -1,6 +1,6 @@
 var datas = [
-    { id: 1, html:"articles/1.html", title:"從零開始的網誌開張啦！",
-        info: "還在定位這個網誌的目標中，目前有學習筆記，資料分享..." }
+    { id: 1, html:"articles/1.html", title:"從零開始的網誌開張啦！", time:"2022/12/28",
+        info: "規劃網誌的目標中..." }
 ];
 
 $(document).ready(function(){
@@ -15,6 +15,7 @@ function addNewArticle(data){
     document.getElementById("items").innerHTML += 
     "<div class=\"item\">" +
         "<h3>" + data.title + "</h3>" +
+        "<h5>" + data.time + "</h5>" +
         "<h4>" + data.info + "</h4>" +
         "<div><a href=\"" + data.html + "\">more...</a></div>" +
     "</div>";
