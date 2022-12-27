@@ -6,7 +6,11 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <script type='text/javascript' src="main.js"></script>
-    <link rel="import" href="bar.html">
+    <script> 
+      $(function(){
+        $("#bar").load("bar.html"); 
+      });
+    </script> 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-940609096"></script>
     <script>
@@ -17,7 +21,7 @@
     </script>
   </head>
   <body>
-    <!--  -->
+    <!-- main.js load bar.html -->
     <div id= "bar"></div>
     <!--  -->
     <div class="content">
