@@ -16,6 +16,7 @@ p{
 {
 	max-width: 720px;
 	margin:0px auto;/*通用置中方法*/
+	background-color: white;
 }
 
 .item
